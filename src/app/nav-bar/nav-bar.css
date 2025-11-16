@@ -1,0 +1,17 @@
+.nav-bar-item {
+    width: 100%;
+    text-align: center;
+    background-color: #dd8299;
+}
+
+.active-route {
+    background-color: green;
+}
+
+.nav-bar-item:hover {
+    background-color: #764350;
+}
+
+h1 {
+    margin: 0px;
+}

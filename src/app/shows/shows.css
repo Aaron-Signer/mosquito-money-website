@@ -1,0 +1,11 @@
+.show {
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.shows {
+    padding: 50px 20% 0 20%;
+}

@@ -1,5 +1,7 @@
 export interface IEvent {
+    id: number;
     location: String; 
-    date: Date; 
+    date: Date;
+    time: String;
     venue: String;
 }

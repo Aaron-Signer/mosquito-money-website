@@ -1,0 +1,18 @@
+{
+    "shows": [
+        {
+            "id": 1,
+            "location": "565 Lincoln Avenue - Downstairs Level, Bellevue, PA 15202",
+            "date": "2026-04-19",
+            "time": "1900",
+            "venue": "565 Live - Speakeasy & Stage"
+        },
+        {
+            "id": 2,
+            "location": "56 S 12th St, Pittsburgh, PA 15203",
+            "date": "2026-05-24",
+            "time": "1900",
+            "venue": "Club Cafe"
+        }
+    ]
+}

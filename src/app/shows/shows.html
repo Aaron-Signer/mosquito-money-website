@@ -1,1 +1,9 @@
-<p>shows works!</p>
+<div class="shows">
+    @for (show of showList; track show.id) {
+    <div class="show">
+        <div class="show-venue">{{ show.venue }}</div>
+        <div class="show-location">{{ show.location }}</div>
+        <div class="show-date">{{ show.date }} : {{show.time}}</div>
+    </div>
+    }
+</div>

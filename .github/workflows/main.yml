@@ -41,7 +41,10 @@ jobs:
         run: cp ./dist/mosquito-money-website/browser/index.html ./dist/mosquito-money-website/browser/404.html
 
       - name: Copy CNAME for custom domain
-        run: cp ./CNAME ./dist/mosquito-money-website/browser/CNAME
+        run: |
+          if [ -f ./CNAME ]; then
+            cp ./CNAME ./dist/mosquito-money-website/browser/CNAME
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

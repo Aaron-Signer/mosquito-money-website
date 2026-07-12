@@ -32,13 +32,16 @@ jobs:
         run: npm ci
 
       - name: Build Angular App
-        run: npm run build -- --configuration production --base-href /${{ github.event.repository.name }}/
+        run: npm run build -- --configuration production --base-href /
 
       - name: Add .nojekyll file
         run: touch ./dist/mosquito-money-website/browser/.nojekyll
 
       - name: Copy index.html to 404.html
         run: cp ./dist/mosquito-money-website/browser/index.html ./dist/mosquito-money-website/browser/404.html
+
+      - name: Copy CNAME for custom domain
+        run: cp ./CNAME ./dist/mosquito-money-website/browser/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
